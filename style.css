@@ -1,17 +1,20 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #5dee1f;
+    background-color: #f39c31;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #d5581e;
+    background-color: #87e7c7;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
 h1 {
@@ -19,41 +22,55 @@ h1 {
     margin-bottom: 20px;
 }
 
-.form-group {
+.note-input {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    flex-direction: column;
 }
 
-label {
-    flex: 1;
-}
-
-select, button {
-    flex: 2;
+textarea {
     padding: 10px;
-    border: 1px solid #eaea5a;
+    font-size: 16px;
+    border: 1px solid #b0c4ef;
     border-radius: 4px;
+    resize: none;
+    height: 100px;
+    margin-bottom: 10px;
 }
 
 button {
-    background-color: #007BFF;
-    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #f83b34;
 }
 
-#weather-info {
+.notes-container {
     margin-top: 20px;
-    padding: 10px;
-    background-color: #65bad6;
-    border-radius: 4px;
-    text-align: center;
 }
 
-#weather-info p {
-    margin: 10px 0;
+.note {
+    background-color: #e5e6f0;
+    padding: 10px;
+    border: 1px solid #e3ebf2;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.note button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #dc3545;
+}
+
+.note button:hover {
+    background-color: #c82333;
 }
